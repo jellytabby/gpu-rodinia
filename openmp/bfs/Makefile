@@ -15,4 +15,4 @@ bfs_offload: bfs.cpp
 	$(ICC) $(CC_FLAGS) -DOMP_OFFLOAD bfs.cpp -o bfs_offload
 
 clean:
-	rm -f bfs bfs_offload result.txt
+	rm -f bfs bfs_offload result.txt *.o *.bc
