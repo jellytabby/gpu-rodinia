@@ -1,0 +1,2 @@
+CompileFlags:
+  Add: ["-I/scr/sophia.herrmann/src/profiler"]
