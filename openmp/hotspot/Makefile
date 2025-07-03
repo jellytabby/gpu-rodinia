@@ -1,17 +1,17 @@
 # C compiler
-CC = g++
+CC = clang++
 ICC = icc
 CC_FLAGS = -g -fopenmp -O2
 OFFLOAD_CC_FLAGS = -offload-option,mic,compiler,"-no-opt-prefetch"
 
-all: hotspot hotspot_offload 
+all: hotspot 
 
 
-hotspot: hotspot_openmp.cpp Makefile 
+old_hotspot: hotspot_openmp.cpp Makefile 
 	$(CC) $(CC_FLAGS) hotspot_openmp.cpp -o hotspot 
 
 hotspot_offload: hotspot_openmp.cpp Makefile
 	$(ICC) $(CC_FLAGS) $(OFFLOAD_CC_FLAGS) -DOMP_OFFLOAD hotspot_openmp.cpp -o hotspot_offload
 
 clean:
-	rm -f hotspot hotspot_offload
+	rm -f hotspot hotspot_offload *.bc *.o *.txt
