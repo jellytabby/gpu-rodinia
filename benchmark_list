@@ -1,5 +1,6 @@
 ./openmp/bfs/bfs
 ./openmp/hotspot/hotspot
 ./openmp/hotspot3D/3D
+./openmp/particlefilter/particle_filter
 ./openmp/pathfinder/pathfiner
 
