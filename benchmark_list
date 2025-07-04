@@ -1,5 +1,6 @@
 ./openmp/backprop/backprop
 ./openmp/bfs/bfs
+./openmp/cfd/euler3d_cpu
 ./openmp/hotspot/hotspot
 ./openmp/hotspot3D/3D
 ./openmp/kmeans/kmeans_openmp/kmeans
