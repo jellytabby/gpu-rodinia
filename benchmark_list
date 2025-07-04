@@ -1,3 +1,4 @@
+./openmp/backprop/backprop
 ./openmp/bfs/bfs
 ./openmp/hotspot/hotspot
 ./openmp/hotspot3D/3D
